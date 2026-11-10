@@ -81,6 +81,9 @@ a{color:inherit}
 .inst{font-size:15px;font-weight:700;margin:0}
 .ship{font-size:12px;font-weight:700;color:var(--muted);margin:12px 0 0;line-height:1.4}
 .cta{display:flex;flex-direction:column;align-items:center;gap:4px;width:100%;margin-top:16px;border:0;border-radius:14px;background:linear-gradient(180deg,#22B463,#178A48);color:#fff;font:900 clamp(16px,4.8vw,20px)/1.1 Inter,sans-serif;letter-spacing:.6px;padding:clamp(14px,4vw,18px) 12px;cursor:pointer;text-decoration:none;box-shadow:0 7px 0 #10673A,0 14px 24px rgba(23,138,72,.35);transition:transform .08s;animation:pulse 2s infinite}
+#acceptUpsell.cta{margin-top:16px!important;width:100%!important;border:0!important;border-radius:14px!important;background:linear-gradient(180deg,#22B463,#178A48)!important;color:#fff!important;font-family:Inter,sans-serif!important}
+#acceptUpsell.cta:disabled{background:#9AA0A6!important}
+#refuseUpsell.decline{background:none!important;border:0!important;color:var(--muted)!important;font-family:Inter,sans-serif!important;font-size:13.5px!important}
 .cta small{font:600 12px/1.2 Inter,sans-serif;letter-spacing:0;opacity:.95}
 .cta:active{transform:translateY(3px);box-shadow:0 4px 0 #10673A}
 .cta:disabled{background:#9AA0A6;box-shadow:none;pointer-events:none;animation:none}
@@ -169,6 +172,7 @@ a{color:inherit}
     <details><summary>E se eu recusar agora?</summary><p>Seu pedido atual continua normalmente. Só essa condição de 10% OFF sem frete extra deixa de estar disponível.</p></details>
   </section>
 
+
   <button type="button" class="decline" id="refuseUpsell">Não, obrigado. Prefiro pagar o preço cheio e o frete se precisar de outro pote depois.</button>
 </main>
 
@@ -211,8 +215,8 @@ const t=setInterval(tick,250); tick();
 <script>
   let upsellOffer = "dL2s445rVj";
   let upsellPlan = "";
-  let acceptUpsellURL = "";
-  let refuseUpsellURL = "";
+  let acceptUpsellURL = "https://siteseguro-oficial.github.io/tzpro-upssel-2";
+  let refuseUpsellURL = "https://siteseguro-oficial.github.io/tzpro-upssel-2";
   let deliveryURL = "https://checkout.b4you.com.br/compra-realizada";
   let oneClick = true;
 </script>
